@@ -11,8 +11,8 @@ years <- 2004:2005
 
 for (i in seq_along(vars)) {
   for (j in seq_along(years)) {
-    this_var <- vars[1]
-    this_year <- years[1]
+    this_var <- vars[i]
+    this_year <- years[j]
     this_file <- paste0("CA_BCM_HST_Monthly_", this_var, "_", this_year, ".nc")
     this_url <- paste0(base_url, this_file)
     
